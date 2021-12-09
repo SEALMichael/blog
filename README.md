@@ -1,26 +1,22 @@
-**<p align="center">[Leeyom's Blog](https://blog.leeyom.top)</p>**
+**<p align="center">[Thomas' Blog](https://thomas-lv.github.io)</p>**
 **<p align="center">用于记录一些幼稚的想法和脑残的瞬间~</p>**
 
 ## 联系方式
-- Twitter：[@super_leeyom](https://twitter.com/super_leeyom)
-- Telegram：[@super_leeyom](https://t.me/super_leeyom)
-- Email：[leeyomwang@163.com](mailto:leeyomwang@163.com)
-- Blog：[https://blog.leeyom.top](https://blog.leeyom.top)
+- Twitter：[@thomas_lv](https://twitter.com/thomas_lv)
+- Telegram：[@thomas_lv](https://t.me/thomas_lv)
+- Email：[thomas_lv@126.com](mailto:thomas_lv@126.com)
+- Blog：[https://thomas-lv.github.io/](https://thomas-lv.github.io/)
 ## 最近更新
 - [基于Github Issues的博客搭建](https://github.com/superleeyom/blog/issues/38)--2021-09-06
 - [深漂5年随想](https://github.com/superleeyom/blog/issues/37)--2021-08-18
 - [对k8s中Service的理解](https://github.com/superleeyom/blog/issues/36)--2021-07-25
 - [Java空指针避坑指南](https://github.com/superleeyom/blog/issues/35)--2021-07-22
-- [《半小时漫画经济学4：理财篇》读书笔记](https://github.com/superleeyom/blog/issues/34)--2021-07-12
 ## 乱写一通
-- [深漂5年随想](https://github.com/superleeyom/blog/issues/37)--2021-08-18
 - [家常菜谱](https://github.com/superleeyom/blog/issues/33)--2021-07-11
-- [聊聊我整牙的那些事儿](https://github.com/superleeyom/blog/issues/31)--2021-07-05
 - [我的跑步感悟](https://github.com/superleeyom/blog/issues/30)--2021-06-30
 - [咕咚和keep跑步数据导入Nike Run Club](https://github.com/superleeyom/blog/issues/18)--2021-01-27
 <details><summary>显示更多</summary>
 
-- [Hackintosh黑苹果折腾之旅](https://github.com/superleeyom/blog/issues/6)--2020-11-15
 </details>
 
 ## 技术相关
