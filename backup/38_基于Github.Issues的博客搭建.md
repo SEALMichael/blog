@@ -1,15 +1,15 @@
 # [基于Github Issues的博客搭建](https://github.com/superleeyom/blog/issues/38)
 
-应朋友`@凯佬`的要求，特意写一篇基于 `Github Issues` 博客的搭建教程，整体的过程非常简单，后端参考了 [@yihong0618](https://github.com/yihong0618) 的 [gitblog](https://github.com/yihong0618/gitblog) 项目，发布` issues`，做数据备份，前端参考了[@LoeiFy](https://github.com/LoeiFy) 的 [Mirror](https://github.com/LoeiFy/Mirror) 项目，用于做前端可视化界面，感谢二位大佬的开源精神，所有的服务全部免费（ps：如果你需要自定义域名，自定义域名需要自己付费购买），感谢 Github！
+基于 `Github Issues` 博客的搭建教程，整体的过程非常简单，后端参考了 [@superleeyom](https://github.com/superleeyom) 的 [gitblog](https://github.com/superleeyom/gitblog) 项目，发布` issues`，做数据备份，前端参考了[@LoeiFy](https://github.com/LoeiFy) 的 [Mirror](https://github.com/LoeiFy/Mirror) 项目，用于做前端可视化界面，感谢二位大佬的开源精神，所有的服务全部免费（ps：如果你需要自定义域名，自定义域名需要自己付费购买），感谢 Github！
 
 ## 利用 Github Actions 做数据备份
 
-首先需要 fork 我的项目 [blog](https://github.com/superleeyom/blog)，也可以 fork [@yihong0618](https://github.com/yihong0618) 的 [gitblog](https://github.com/yihong0618/gitblog) 项目，都差不多，然后修改 `generate_readme.yml`文件，这个文件是触发自动备份的 CI/CD 配置文件，修改如下的地方：
+首先需要 fork 我的项目 [blog](https://github.com/Thomas-Lv/blog)，也可以 fork [@superleeyom](https://github.com/superleeyom) 的 [gitblog](https://github.com/superleeyom/gitblog) 项目，都差不多，然后修改 `generate_readme.yml`文件，这个文件是触发自动备份的 CI/CD 配置文件，修改如下的地方：
 
 ```yml
 env:
-  GITHUB_NAME: superleeyom
-  GITHUB_EMAIL: xxx@qq.com
+  GITHUB_NAME: thomas-lv
+  GITHUB_EMAIL: xxx@126.com
 ```
 
 改成你自己的 Github 用户名和邮箱，接着在你自己的这个 blog 仓库下，创建 `Environment secrets`环境变量 `G_T`：
@@ -28,10 +28,10 @@ env:
 MD_HEAD = """**<p align="center">[Leeyom's Blog](https://blog.leeyom.top)</p>**
 **<p align="center">用于记录一些幼稚的想法和脑残的瞬间~</p>**
 ## 联系方式
-- Twitter：[@super_leeyom](https://twitter.com/super_leeyom)
-- Telegram：[@super_leeyom](https://t.me/super_leeyom)
-- Email：[leeyomwang@163.com](mailto:leeyomwang@163.com)
-- Blog：[https://blog.leeyom.top](https://blog.leeyom.top)
+- Twitter：[@thomas_lv](https://twitter.com/thomas_lv)
+- Telegram：[@thomas_lv](https://t.me/thomas_lv)
+- Email：[thomas_lv@126.com](mailto:thomas_lv@126.com)
+- Blog：[https://thomas-lv.github.io](https://thomas-lv.github.io)
 """
 ```
 
@@ -49,7 +49,7 @@ MD_HEAD = """**<p align="center">[Leeyom's Blog](https://blog.leeyom.top)</p>**
 
 ## 利用 Github Pages 做可视化界面
 
-- 首先你得先创建一个 `github用户名.github.io`的仓库，必须是公共仓库，比如我的：[superleeyom.github.io](https://github.com/superleeyom/superleeyom.github.io)，然后你把我这个仓库 [superleeyom.github.io](https://github.com/superleeyom/superleeyom.github.io) 的文件全部拷贝到你刚创建的仓库里面，删除 `Archive`文件夹，这个是我以前备份的 md 文件，对你没啥用！
+- 首先你得先创建一个 `github用户名.github.io`的仓库，必须是公共仓库，比如我的：[thomas-lv.github.io](https://github.com/Thomas-Lv/thomas-lv.github.io)，然后你把我这个仓库 [thomas-lv.github.io](https://github.com/Thomas-Lv/thomas-lv.github.io) 的文件全部拷贝到你刚创建的仓库里面，删除 `Archive`文件夹，这个是我以前备份的 md 文件，对你没啥用！
 
 - 修改 `docs` 目录和根目录下的两个 `CNAME` 文件，里面的内容是你的自定义的域名，比如我的自定义域名是：`blog.leeyom.top`，如果没有自定义域名，默认填：`github用户名.github.io`。
 
@@ -59,10 +59,10 @@ MD_HEAD = """**<p align="center">[Leeyom's Blog](https://blog.leeyom.top)</p>**
   window.config = {
     organization: false,// 默认是 false，如果你的项目是属于 GitHub 组织 的，请设置为 true
     order: 'CREATED_AT',// 文章排序，以 创建时间 或者 更新时间，可选值 'UPDATED_AT'，'CREATED_AT'
-    title: "Leeyom's Blog",// 博客标题
-    user: 'superleeyom',// GitHub 用户名，必须
+    title: "Thomas' Blog",// 博客标题
+    user: 'thomas-lv',// GitHub 用户名，必须
     repository: 'blog',// GitHub 项目名，指定文章内容来源 issues，必须
-    authors: 'Leeyom',// 博客作者，以 ',' 分割，GitHub 用户名默认包含在内
+    authors: 'Thomas_Lv',// 博客作者，以 ',' 分割，GitHub 用户名默认包含在内
     ignores: '',// 文章忽略的 issues ID
     hash: 'ghp_VkKID%Qnlgg$SXfIt!UmH&uCLCtHFU$XJHK^YmxvZy5sZWV5b20udG9w',// hash，必须
     perpage: 5,// 分页数量
@@ -87,5 +87,5 @@ MD_HEAD = """**<p align="center">[Leeyom's Blog](https://blog.leeyom.top)</p>**
 
 ## 参考资料
 
-- [这个博客开源了](https://github.com/yihong0618/gitblog/issues/177)
+- [这个博客开源了](https://github.com/superleeyom/gitblog/issues/177)
 - [Mirror中文教程](https://github.com/LoeiFy/Mirror/wiki/%E4%B8%AD%E6%96%87%E6%95%99%E7%A8%8B)
