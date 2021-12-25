@@ -7,7 +7,7 @@ from github import Github
 MD_HEAD = """**<p align="center">[Thomas' Blog](https://blog.thomaslv.top)</p>**
 **<p align="center">记录、成长、进步~</p>**
 
-## 联系方式
+## 联系方式测试一下
 - Twitter：[@thomas_lv](https://twitter.com/thomas_lv)
 - Telegram：[@thomas_lv](https://t.me/thomas_lv)
 - Email：[thomas_lv@126.com](mailto:thomas_lv@126.com)
